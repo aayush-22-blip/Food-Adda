@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>best online food delivery website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100&display=swap" rel="stylesheet">
+    <style>
+        #logo {
+            margin: 3px;
+        }
+
+        /*Navigation Bar*/
+
+        #navbar img {
+            width: 75px;
+        }
+
+        #navbar {
+            display: flex;
+            position: sticky;
+        }
+
+        #navbar ul {
+            display: flex;
+            position: sticky;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: rgb(51, 40, 40);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+            opacity: 0.7;
+        }
+
+        #navbar ul li {
+
+
+            list-style: none;
+            font-style: unset;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a {
+            display: block;
+            text-decoration: none;
+            border-radius:b(9, 165, 212);
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            font-size: 20px;
+            font-family: 'Henny Penny', cursive;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: rgb(210, 218, 218);
+        }
+
+        /*CSS Reset*/
+        
+        html{
+            scroll-behavior: smooth;
+        }
+
+        /*Home section*/
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1px;
+            height: 270px;
+        }
+        #home p{
+            font-size: 18px;
+            font-family: 'Cookie', cursive;
+            margin-bottom: 5px;
+        }
+
+        #home::before {
+            content: "";
+            background: url(https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat center center/cover;
+            position: absolute;
+            z-index: -3;
+            height: 60%;
+            width: 100%;
+            opacity: 0.85;
+        }
+
+        #home h1 {
+            color: black;
+            font-family: 'Henny Penny', cursive;
+            
+        }
+
+        /*services-container*/
+
+        #services {
+            margin: 20px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 4px solid rgb(189, 69, 69);
+            padding: 5px;
+            margin: 5px;
+            border-radius: 14px;
+            background-color: rgb(224, 203, 174);
+        }
+
+        #services .box img {
+            height: 130px;
+            display: block;
+            margin: auto;
+        }
+        
+
+        #services .box p {
+            padding: 5px;
+        }
+
+        /*clients Section*/
+
+        #clients::before {
+            content: "";
+            background: url(https://c.pxhere.com/photos/a6/61/food_table_cake_dessert_napkin-23295.jpg!d) no-repeat center center/cover;
+            position: absolute;
+            z-index: -1;
+            height: 40%;
+            width: 100%;
+            opacity: 1;
+        }
+
+        #clients{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients img{
+            width: 200px;
+            padding: 20px;
+        }
+        
+
+        /*contact-Details*/
+        
+        #contact{
+            position: relative;
+        }
+
+        #contact-box{
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            padding-bottom: 30px;
+        }
+
+        #contact::before{
+            content: "";
+            background: url(https://wallpaperaccess.com/full/3124511.jpg) no-repeat center center/cover;
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            opacity: 0.85;
+        }
+        
+        footer{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+
+        #contact-box input,
+        #contact-box textarea{
+            padding: 7px;
+            border: 4px solid black;
+            margin: 2px;
+            border-radius: 13px;
+            width: 350px;
+            font-size: 14px;
+            font-family: 'Concert One', cursive;
+            font-weight: bold;
+
+        }
+
+
+
+
+        /*utility classes*/
+        .h-primary {
+            font-size: 42px;
+            padding: 11px;
+            font-family: 'Syne Tactile', cursive;
+        }
+
+        .h-secondary {
+            font-size: 25px;
+            font-family: 'Lobster', cursive;
+
+            /*text-align: center;*/
+        }
+
+        .btn {
+            border: 2px solid black;
+            border-radius: 20px;
+            font-size: 22px;
+            cursor: pointer;
+            font-family: 'Krona One', sans-serif;
+        }
+
+        .btn:hover {
+            color: rgb(105, 166, 207);
+            background-color: rgb(4, 73, 73);
+        }
+
+        .centre {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://img4.goodfon.com/wallpaper/nbig/7/50/guilherme-gomes-chef-3d-shef-povar-eda.jpg" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#clients-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Online Meal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quod!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, ea?</p>
+        <button class="btn">Order now</button>
+    </section>
+
+
+
+
+
+    <section id="services-container">
+        <h2 class="h-primary centre">Our Services</h2>
+        <div id="services">
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1519692548406-72146873010c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                    alt="">
+                <h3 class="h-secondary centre">Food Ordering</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloribus eos ipsa velit, possimus
+                    delectus dolorum molestias magnam illum, error blanditiis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ab veritatis consequuntur enim nisi dolor! quia.</p>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1464195643332-1f236b1c2255?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80"
+                    alt="">
+                <h3 class="h-secondary centre">Food Catering</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloribus eos ipsa velit, possimus
+                    delectus dolorum molestias magnam illum, error Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quidem enim, ipsam culpa aut nostrum? blanditiis quia.</p>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1585759065152-3b0e2524b869?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                    alt="">
+                <h3 class="h-secondary centre">Bulk Ordering</h3>
+                <p>Lorem ipsum dolor sit amet consectetibus eos ipsa velit, possimus
+                    delectus dolorum molestias magnam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim dicta eum totam ipsam suscipit perferendis quibusdam aperiam saepe ab odio, deleniti repellat  nulla haruerror blanditiis quia.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="clients-section">
+        <h1 class="h-primary centre">Our Clients</h1>
+        <div id="clients">
+            <div class="clients item">
+                <img src="https://storage.googleapis.com/webdesignledger.pub.network/WDL/maxresdefault.jpg" alt="">
+            </div>
+            <div class="clients item">
+                <img src="http://pngimg.com/uploads/microsoft/microsoft_PNG21.png" alt="">
+            </div>
+            <div class="clients item">
+                <img src="https://voxytalksy.com/wp-content/uploads/2018/08/google-voxytalksy.png" alt="">
+            </div>
+            <div class="clients item">
+                <img src="https://turbologo.com/articles/wp-content/uploads/2019/12/Skype-logo-icon.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact">
+            <h1 class="h-primary centre">Contact uss</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Enter your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" id="Contact" placeholder="Enter your Contact number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" id="Email-Id" placeholder="Enter your Email-Id">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" id="Address" placeholder="Enter your Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" id="code" placeholder="Enter your code">
+                    </div>
+
+                </form>
+
+            </div>
+    </section> 
+
+    <footer>
+        <div class="centre">
+            copyright &copy; www.Myonlinemeal.com All Rights Reserved
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
